@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navigation */
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* main section */
+
+main {
+  max-width: 800px;
+  margin: 20px;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* paragraph */
+
+p {
+  padding: 0;
+}
+
+/* aside section */
+
+aside {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* footer */
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+}
