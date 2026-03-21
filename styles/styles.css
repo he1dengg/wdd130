@@ -19,6 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--accent2-color); /* dùng accent2 */
 }
 
 /* Layout */
@@ -80,7 +81,7 @@ nav a {
 .hero article {
     position: absolute;
     bottom: 20px;
-    background-color: var(--secondary-color); /* ✅ FIX: dùng secondary-color */
+    background-color: var(--secondary-color); /* ✅ FIX chính: dùng secondary */
     padding: 10px;
 }
 
@@ -93,7 +94,7 @@ nav a {
 
 /* Sections */
 section {
-    background-color: var(--accent2-color); /* ✅ dùng luôn accent2-color */
+    background-color: var(--accent2-color); /* dùng accent2 */
 }
 
 /* Footer */
