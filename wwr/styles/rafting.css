@@ -19,6 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--secondary-color);
 }
 
 /* Layout */
@@ -27,83 +28,87 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Spacing */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Header */
+/* HEADER GRID */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
 }
 
-/* Navigation */
-nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    margin: 0 10px;
+/* NAV FLEX */
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* Hero */
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--accent1-color);
+}
+
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* Hero Title */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    background-color: var(--accent1-color);
+    background: var(--accent1-color);
     color: white;
-    opacity: 0.8;
-}
-
-/* Hero Article */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    background-color: var(--accent2-color);
     padding: 10px;
 }
 
-/* Article Image */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    background: var(--accent2-color);
+    padding: 10px;
+}
+
 .hero article img {
     float: right;
-    width: 125px;
+    width: 120px;
     margin-left: 10px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
+/* HISTORY GRID */
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
 }
 
-/* Social Media */
-.socialmedia a {
-    text-decoration: none;
+/* ADVENTURE FLEX */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventure-gallery img {
+    width: 100px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
 }
 
 .socialmedia img {
     width: 30px;
-    height: 30px;
-    object-fit: contain;
     margin: 5px;
 }
