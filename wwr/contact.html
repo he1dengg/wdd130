@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact White Water Rafting company for reservations, questions, and support.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Rafting Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p><strong>Address:</strong> 123 River Road, Adventure City</p>
+        <p><strong>Phone:</strong> +1 123-456-7890</p>
+        <p><strong>Email:</strong> info@rafting.com</p>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- EMPLOYEES -->
+    <section class="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee-grid">
+
+            <figure>
+                <img src="images/guide1.jpg" alt="Guide">
+                <figcaption>John Doe - Lead Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide2.jpg" alt="Instructor">
+                <figcaption>Jane Smith - Safety Instructor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide3.jpg" alt="Manager">
+                <figcaption>Mike Lee - Operations Manager</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <form>
+
+            <!-- NAME -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- RADIO OPTIONS -->
+            <p>Purpose of Message:</p>
+
+            <label>
+                <input type="radio" name="purpose" value="general" required>
+                General Inquiry
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
+
+            <!-- MESSAGE -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <!-- CHECKBOX -->
+            <label>
+                <input type="checkbox" name="subscribe">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <!-- SUBMIT -->
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 White Water Rafting | Your Name</p>
+</footer>
+
+</body>
+</html>
