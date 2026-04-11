@@ -1,119 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Contact White Water Rafting company for reservations, questions, and support.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact White Water Rafting company for reservations, questions, and support.">
+  <meta name="author" content="he1dengg">
+  <title>Contact Us | White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-<header>
+  <!-- HEADER -->
+  <header>
     <img src="images/logo.png" alt="Rafting Logo">
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
-</header>
+  </header>
 
-<main>
+  <!-- MAIN -->
+  <main>
+    <h1>Contact White Water Rafting</h1>
 
-    <!-- CONTACT INFO -->
-    <section class="contact-info">
-        <h1>Contact Us</h1>
-        <p><strong>Address:</strong> 123 River Road, Adventure City</p>
-        <p><strong>Phone:</strong> +1 123-456-7890</p>
-        <p><strong>Email:</strong> info@rafting.com</p>
+    <!-- COMPANY INFO -->
+    <section>
+      <h2>Our Office</h2>
+      <p>📍 123 River Road, Adventure City</p>
+      <p>📞 +1 234 567 890</p>
+      <p>📧 info@whitewaterrafting.com</p>
     </section>
 
-    <!-- GOOGLE MAP -->
-    <section class="map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18..."
-            loading="lazy">
-        </iframe>
+    <!-- MAP IMAGE -->
+    <section>
+      <h2>Find Us</h2>
+      <img src="images/map.jpg" alt="Map showing rafting company location">
     </section>
 
     <!-- EMPLOYEES -->
-    <section class="employees">
-        <h2>Meet Our Team</h2>
-        <div class="employee-grid">
+    <section>
+      <h2>Meet Our Team</h2>
 
-            <figure>
-                <img src="images/guide1.jpg" alt="Guide">
-                <figcaption>John Doe - Lead Guide</figcaption>
-            </figure>
+      <figure>
+        <img src="images/guide1.jpg" alt="Rafting guide leading a group on the river">
+        <figcaption>John - Lead Guide</figcaption>
+      </figure>
 
-            <figure>
-                <img src="images/guide2.jpg" alt="Instructor">
-                <figcaption>Jane Smith - Safety Instructor</figcaption>
-            </figure>
+      <figure>
+        <img src="images/guide2.jpg" alt="Instructor teaching rafting safety techniques">
+        <figcaption>Sarah - Instructor</figcaption>
+      </figure>
 
-            <figure>
-                <img src="images/guide3.jpg" alt="Manager">
-                <figcaption>Mike Lee - Operations Manager</figcaption>
-            </figure>
+      <figure>
+        <img src="images/guide3.jpg" alt="Rafting manager supervising operations">
+        <figcaption>Mike - Manager</figcaption>
+      </figure>
 
-        </div>
+      <!-- EXTRA IMAGE (to pass requirement >=5) -->
+      <figure>
+        <img src="images/office.jpg" alt="Rafting company office building">
+        <figcaption>Our Main Office</figcaption>
+      </figure>
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="contact-form">
-        <h2>Send Us a Message</h2>
+    <section>
+      <h2>Contact Form</h2>
 
-        <form>
+      <form>
+        <!-- NAME -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name">
 
-            <!-- NAME -->
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- EMAIL -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
 
-            <!-- EMAIL -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- RADIO -->
+        <p>Inquiry Type:</p>
 
-            <!-- RADIO OPTIONS -->
-            <p>Purpose of Message:</p>
+        <input type="radio" id="general" name="inquiry" value="general">
+        <label for="general">General Question</label>
 
-            <label>
-                <input type="radio" name="purpose" value="general" required>
-                General Inquiry
-            </label>
+        <input type="radio" id="reservation" name="inquiry" value="reservation">
+        <label for="reservation">Reservation</label>
 
-            <label>
-                <input type="radio" name="purpose" value="reservation">
-                Reservation Question
-            </label>
+        <input type="radio" id="support" name="inquiry" value="support">
+        <label for="support">Support</label>
 
-            <label>
-                <input type="radio" name="purpose" value="suggestion">
-                Website Suggestion
-            </label>
+        <!-- MESSAGE -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
 
-            <!-- MESSAGE -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+        <!-- CHECKBOX -->
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label>
 
-            <!-- CHECKBOX -->
-            <label>
-                <input type="checkbox" name="subscribe">
-                Please subscribe me to the monthly newsletter
-            </label>
-
-            <!-- SUBMIT -->
-            <button type="submit">Send Message</button>
-
-        </form>
+        <!-- SUBMIT -->
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
-</main>
+  </main>
 
-<footer>
-    <p>© 2026 White Water Rafting | Your Name</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 White Water Rafting | he1dengg</p>
+
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
 
 </body>
 </html>
